@@ -9,21 +9,27 @@
 /* Begin PBXBuildFile section */
 		CC241D8F2902EE6C00DA9DE3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC241D8E2902EE6C00DA9DE3 /* AppDelegate.swift */; };
 		CC241D912902EE6C00DA9DE3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC241D902902EE6C00DA9DE3 /* SceneDelegate.swift */; };
-		CC241D932902EE6C00DA9DE3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC241D922902EE6C00DA9DE3 /* ViewController.swift */; };
 		CC241D962902EE6C00DA9DE3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC241D942902EE6C00DA9DE3 /* Main.storyboard */; };
 		CC241D982902EE6E00DA9DE3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC241D972902EE6E00DA9DE3 /* Assets.xcassets */; };
 		CC241D9B2902EE6E00DA9DE3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC241D992902EE6E00DA9DE3 /* LaunchScreen.storyboard */; };
+		CC7EE8772906F5C900FB0ADE /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC7EE8762906F5C900FB0ADE /* OnboardingViewController.swift */; };
+		CC7EE87A2906F9C600FB0ADE /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC7EE8792906F9C600FB0ADE /* UIView+Extensions.swift */; };
+		CCDE38912906FF4E003384D0 /* OnboardingSlide.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCDE38902906FF4E003384D0 /* OnboardingSlide.swift */; };
+		CCDE389729070490003384D0 /* OnboardingCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCDE389629070490003384D0 /* OnboardingCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		CC241D8B2902EE6C00DA9DE3 /* What about food?.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "What about food?.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC241D8E2902EE6C00DA9DE3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CC241D902902EE6C00DA9DE3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		CC241D922902EE6C00DA9DE3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		CC241D952902EE6C00DA9DE3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CC241D972902EE6E00DA9DE3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CC241D9A2902EE6E00DA9DE3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CC241D9C2902EE6E00DA9DE3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CC7EE8762906F5C900FB0ADE /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
+		CC7EE8792906F9C600FB0ADE /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
+		CCDE38902906FF4E003384D0 /* OnboardingSlide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingSlide.swift; sourceTree = "<group>"; };
+		CCDE389629070490003384D0 /* OnboardingCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +62,82 @@
 		CC241D8D2902EE6C00DA9DE3 /* What about food? */ = {
 			isa = PBXGroup;
 			children = (
-				CC241D8E2902EE6C00DA9DE3 /* AppDelegate.swift */,
-				CC241D902902EE6C00DA9DE3 /* SceneDelegate.swift */,
-				CC241D922902EE6C00DA9DE3 /* ViewController.swift */,
-				CC241D942902EE6C00DA9DE3 /* Main.storyboard */,
-				CC241D972902EE6E00DA9DE3 /* Assets.xcassets */,
-				CC241D992902EE6E00DA9DE3 /* LaunchScreen.storyboard */,
-				CC241D9C2902EE6E00DA9DE3 /* Info.plist */,
+				CC7EE8732906F57700FB0ADE /* Views */,
+				CC7EE87B2906FA9500FB0ADE /* Storyboards  */,
+				CCDE38952906FFDC003384D0 /* Resourses */,
+				CC7EE87C2906FB4A00FB0ADE /* App */,
+				CC7EE8782906F99E00FB0ADE /* Extensions */,
+				CC7EE8742906F58900FB0ADE /* CustomViews */,
+				CC7EE8712906F53000FB0ADE /* Model */,
 			);
 			path = "What about food?";
+			sourceTree = "<group>";
+		};
+		CC7EE8712906F53000FB0ADE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CCDE38902906FF4E003384D0 /* OnboardingSlide.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CC7EE8732906F57700FB0ADE /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CC7EE8752906F59600FB0ADE /* Onboarding */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		CC7EE8742906F58900FB0ADE /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CustomViews;
+			sourceTree = "<group>";
+		};
+		CC7EE8752906F59600FB0ADE /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				CC7EE8762906F5C900FB0ADE /* OnboardingViewController.swift */,
+				CCDE389629070490003384D0 /* OnboardingCollectionViewCell.swift */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		CC7EE8782906F99E00FB0ADE /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				CC7EE8792906F9C600FB0ADE /* UIView+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		CC7EE87B2906FA9500FB0ADE /* Storyboards  */ = {
+			isa = PBXGroup;
+			children = (
+				CC241D942902EE6C00DA9DE3 /* Main.storyboard */,
+				CC241D992902EE6E00DA9DE3 /* LaunchScreen.storyboard */,
+			);
+			path = "Storyboards ";
+			sourceTree = "<group>";
+		};
+		CC7EE87C2906FB4A00FB0ADE /* App */ = {
+			isa = PBXGroup;
+			children = (
+				CC241D9C2902EE6E00DA9DE3 /* Info.plist */,
+				CC241D902902EE6C00DA9DE3 /* SceneDelegate.swift */,
+				CC241D8E2902EE6C00DA9DE3 /* AppDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		CCDE38952906FFDC003384D0 /* Resourses */ = {
+			isa = PBXGroup;
+			children = (
+				CC241D972902EE6E00DA9DE3 /* Assets.xcassets */,
+			);
+			path = Resourses;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,9 +211,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CC241D932902EE6C00DA9DE3 /* ViewController.swift in Sources */,
+				CCDE38912906FF4E003384D0 /* OnboardingSlide.swift in Sources */,
 				CC241D8F2902EE6C00DA9DE3 /* AppDelegate.swift in Sources */,
 				CC241D912902EE6C00DA9DE3 /* SceneDelegate.swift in Sources */,
+				CC7EE87A2906F9C600FB0ADE /* UIView+Extensions.swift in Sources */,
+				CC7EE8772906F5C900FB0ADE /* OnboardingViewController.swift in Sources */,
+				CCDE389729070490003384D0 /* OnboardingCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -289,12 +365,13 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 6QGWXNWMFJ;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "What about food?/Info.plist";
+				INFOPLIST_FILE = "What about food?/App/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -320,12 +397,13 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 6QGWXNWMFJ;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "What about food?/Info.plist";
+				INFOPLIST_FILE = "What about food?/App/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
