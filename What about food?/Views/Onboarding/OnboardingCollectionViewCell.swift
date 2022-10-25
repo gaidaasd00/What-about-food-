@@ -8,6 +8,7 @@
 import UIKit
 
 class OnboardingCollectionViewCell: UICollectionViewCell {
+    
     //MARK: - @IBOutlet
     @IBOutlet weak var slideImageView: UIImageView!
     @IBOutlet weak var slideTitleLebel: UILabel!
