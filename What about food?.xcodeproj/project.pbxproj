@@ -15,6 +15,12 @@
 		CC6DC24C29098AFB00122505 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC6DC24B29098AFB00122505 /* HomeViewController.swift */; };
 		CC7EE8772906F5C900FB0ADE /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC7EE8762906F5C900FB0ADE /* OnboardingViewController.swift */; };
 		CC7EE87A2906F9C600FB0ADE /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC7EE8792906F9C600FB0ADE /* UIView+Extensions.swift */; };
+		CC99A7AA29099A5800706830 /* CategoryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC99A7A829099A5800706830 /* CategoryCollectionViewCell.swift */; };
+		CC99A7AB29099A5800706830 /* CategoryCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CC99A7A929099A5800706830 /* CategoryCollectionViewCell.xib */; };
+		CC99A7AD29099CE600706830 /* DishCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC99A7AC29099CE600706830 /* DishCategory.swift */; };
+		CC99A7B029099E3D00706830 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = CC99A7AF29099E3D00706830 /* Kingfisher */; };
+		CC99A7B229099FBA00706830 /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC99A7B129099FBA00706830 /* String+Extensions.swift */; };
+		CC99A7B52909A60B00706830 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC99A7B42909A60B00706830 /* CardView.swift */; };
 		CCDE38912906FF4E003384D0 /* OnboardingSlide.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCDE38902906FF4E003384D0 /* OnboardingSlide.swift */; };
 		CCDE389729070490003384D0 /* OnboardingCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCDE389629070490003384D0 /* OnboardingCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
@@ -30,6 +36,11 @@
 		CC6DC24B29098AFB00122505 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		CC7EE8762906F5C900FB0ADE /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
 		CC7EE8792906F9C600FB0ADE /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
+		CC99A7A829099A5800706830 /* CategoryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCollectionViewCell.swift; sourceTree = "<group>"; };
+		CC99A7A929099A5800706830 /* CategoryCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CategoryCollectionViewCell.xib; sourceTree = "<group>"; };
+		CC99A7AC29099CE600706830 /* DishCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DishCategory.swift; sourceTree = "<group>"; };
+		CC99A7B129099FBA00706830 /* String+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
+		CC99A7B42909A60B00706830 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		CCDE38902906FF4E003384D0 /* OnboardingSlide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingSlide.swift; sourceTree = "<group>"; };
 		CCDE389629070490003384D0 /* OnboardingCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -39,6 +50,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CC99A7B029099E3D00706830 /* Kingfisher in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -87,6 +99,7 @@
 			isa = PBXGroup;
 			children = (
 				CCDE38902906FF4E003384D0 /* OnboardingSlide.swift */,
+				CC99A7AC29099CE600706830 /* DishCategory.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -103,6 +116,8 @@
 		CC7EE8742906F58900FB0ADE /* CustomViews */ = {
 			isa = PBXGroup;
 			children = (
+				CC99A7B32909A5F100706830 /* CardView */,
+				CC99A7A6290999EE00706830 /* CollectionViewCells */,
 			);
 			path = CustomViews;
 			sourceTree = "<group>";
@@ -120,6 +135,7 @@
 			isa = PBXGroup;
 			children = (
 				CC7EE8792906F9C600FB0ADE /* UIView+Extensions.swift */,
+				CC99A7B129099FBA00706830 /* String+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -141,6 +157,31 @@
 				CC241D8E2902EE6C00DA9DE3 /* AppDelegate.swift */,
 			);
 			path = App;
+			sourceTree = "<group>";
+		};
+		CC99A7A6290999EE00706830 /* CollectionViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				CC99A7A729099A0C00706830 /* CategoryCollectionViewCell */,
+			);
+			path = CollectionViewCells;
+			sourceTree = "<group>";
+		};
+		CC99A7A729099A0C00706830 /* CategoryCollectionViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				CC99A7A829099A5800706830 /* CategoryCollectionViewCell.swift */,
+				CC99A7A929099A5800706830 /* CategoryCollectionViewCell.xib */,
+			);
+			path = CategoryCollectionViewCell;
+			sourceTree = "<group>";
+		};
+		CC99A7B32909A5F100706830 /* CardView */ = {
+			isa = PBXGroup;
+			children = (
+				CC99A7B42909A60B00706830 /* CardView.swift */,
+			);
+			path = CardView;
 			sourceTree = "<group>";
 		};
 		CCDE38952906FFDC003384D0 /* Resourses */ = {
@@ -167,6 +208,9 @@
 			dependencies = (
 			);
 			name = "What about food?";
+			packageProductDependencies = (
+				CC99A7AF29099E3D00706830 /* Kingfisher */,
+			);
 			productName = "What about food?";
 			productReference = CC241D8B2902EE6C00DA9DE3 /* What about food?.app */;
 			productType = "com.apple.product-type.application";
@@ -195,6 +239,9 @@
 				Base,
 			);
 			mainGroup = CC241D822902EE6C00DA9DE3;
+			packageReferences = (
+				CC99A7AE29099E3D00706830 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
 			productRefGroup = CC241D8C2902EE6C00DA9DE3 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -209,6 +256,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CC99A7AB29099A5800706830 /* CategoryCollectionViewCell.xib in Resources */,
 				CC241D9B2902EE6E00DA9DE3 /* LaunchScreen.storyboard in Resources */,
 				CC241D982902EE6E00DA9DE3 /* Assets.xcassets in Resources */,
 				CC241D962902EE6C00DA9DE3 /* Main.storyboard in Resources */,
@@ -222,12 +270,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CC99A7B229099FBA00706830 /* String+Extensions.swift in Sources */,
+				CC99A7AA29099A5800706830 /* CategoryCollectionViewCell.swift in Sources */,
 				CCDE38912906FF4E003384D0 /* OnboardingSlide.swift in Sources */,
 				CC241D8F2902EE6C00DA9DE3 /* AppDelegate.swift in Sources */,
 				CC241D912902EE6C00DA9DE3 /* SceneDelegate.swift in Sources */,
 				CC7EE87A2906F9C600FB0ADE /* UIView+Extensions.swift in Sources */,
 				CC7EE8772906F5C900FB0ADE /* OnboardingViewController.swift in Sources */,
 				CC6DC24C29098AFB00122505 /* HomeViewController.swift in Sources */,
+				CC99A7AD29099CE600706830 /* DishCategory.swift in Sources */,
+				CC99A7B52909A60B00706830 /* CardView.swift in Sources */,
 				CCDE389729070490003384D0 /* OnboardingCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -454,6 +506,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		CC99A7AE29099E3D00706830 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		CC99A7AF29099E3D00706830 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CC99A7AE29099E3D00706830 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = CC241D832902EE6C00DA9DE3 /* Project object */;
 }
