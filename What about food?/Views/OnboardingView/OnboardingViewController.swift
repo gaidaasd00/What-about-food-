@@ -47,6 +47,9 @@ class OnboardingViewController: UIViewController {
                 image: UIImage(imageLiteralResourceName: "slide3")
             )
         ]
+        //setting pageControl number pages
+        pageControl.numberOfPages = slides.count
+
         
         
         collectionView.delegate = self
