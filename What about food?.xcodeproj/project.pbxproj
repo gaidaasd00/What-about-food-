@@ -19,6 +19,9 @@
 		CC53468C29117AFD00FF8734 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC53468B29117AFD00FF8734 /* ListViewController.swift */; };
 		CC53468F2911817F00FF8734 /* ListOrdersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC53468E2911817F00FF8734 /* ListOrdersViewController.swift */; };
 		CC5346912911832100FF8734 /* Orders.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC5346902911832100FF8734 /* Orders.swift */; };
+		CC53469429118CAC00FF8734 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC53469329118CAC00FF8734 /* NetworkService.swift */; };
+		CC53469629118DC600FF8734 /* Route.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC53469529118DC600FF8734 /* Route.swift */; };
+		CC53469829118ECE00FF8734 /* Method.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC53469729118ECE00FF8734 /* Method.swift */; };
 		CC6DC24C29098AFB00122505 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC6DC24B29098AFB00122505 /* HomeViewController.swift */; };
 		CC7EE8772906F5C900FB0ADE /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC7EE8762906F5C900FB0ADE /* OnboardingViewController.swift */; };
 		CC7EE87A2906F9C600FB0ADE /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC7EE8792906F9C600FB0ADE /* UIView+Extensions.swift */; };
@@ -52,6 +55,9 @@
 		CC53468B29117AFD00FF8734 /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
 		CC53468E2911817F00FF8734 /* ListOrdersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListOrdersViewController.swift; sourceTree = "<group>"; };
 		CC5346902911832100FF8734 /* Orders.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Orders.swift; sourceTree = "<group>"; };
+		CC53469329118CAC00FF8734 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		CC53469529118DC600FF8734 /* Route.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Route.swift; sourceTree = "<group>"; };
+		CC53469729118ECE00FF8734 /* Method.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Method.swift; sourceTree = "<group>"; };
 		CC6DC24B29098AFB00122505 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		CC7EE8762906F5C900FB0ADE /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
 		CC7EE8792906F9C600FB0ADE /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
@@ -100,6 +106,7 @@
 		CC241D8D2902EE6C00DA9DE3 /* What about food? */ = {
 			isa = PBXGroup;
 			children = (
+				CC53469229118C7800FF8734 /* Networking */,
 				CC7EE8732906F57700FB0ADE /* Views */,
 				CC7EE87B2906FA9500FB0ADE /* Storyboards  */,
 				CCDE38952906FFDC003384D0 /* Resourses */,
@@ -150,6 +157,16 @@
 				CC53468E2911817F00FF8734 /* ListOrdersViewController.swift */,
 			);
 			path = ListOrders;
+			sourceTree = "<group>";
+		};
+		CC53469229118C7800FF8734 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				CC53469329118CAC00FF8734 /* NetworkService.swift */,
+				CC53469529118DC600FF8734 /* Route.swift */,
+				CC53469729118ECE00FF8734 /* Method.swift */,
+			);
+			path = Networking;
 			sourceTree = "<group>";
 		};
 		CC6DC24A29098ACA00122505 /* HomeVIew */ = {
@@ -373,11 +390,14 @@
 				CC241D8F2902EE6C00DA9DE3 /* AppDelegate.swift in Sources */,
 				CC241D912902EE6C00DA9DE3 /* SceneDelegate.swift in Sources */,
 				CC7EE87A2906F9C600FB0ADE /* UIView+Extensions.swift in Sources */,
+				CC53469829118ECE00FF8734 /* Method.swift in Sources */,
 				CC7EE8772906F5C900FB0ADE /* OnboardingViewController.swift in Sources */,
 				CC6DC24C29098AFB00122505 /* HomeViewController.swift in Sources */,
 				CCE6DE82290CFF7900B85BC1 /* DishLandscapeCollectionViewCell.swift in Sources */,
 				CC99A7AD29099CE600706830 /* DishCategory.swift in Sources */,
 				CC99A7B52909A60B00706830 /* CardView.swift in Sources */,
+				CC53469629118DC600FF8734 /* Route.swift in Sources */,
+				CC53469429118CAC00FF8734 /* NetworkService.swift in Sources */,
 				CCDE389729070490003384D0 /* OnboardingCollectionViewCell.swift in Sources */,
 				CC5346912911832100FF8734 /* Orders.swift in Sources */,
 				CC5346832911710700FF8734 /* UIViewContoller+Extension.swift in Sources */,

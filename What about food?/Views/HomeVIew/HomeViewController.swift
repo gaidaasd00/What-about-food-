@@ -71,6 +71,7 @@ class HomeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+    
         title = "What about food?"
         
         registerXIB()

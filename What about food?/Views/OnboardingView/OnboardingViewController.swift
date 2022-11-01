@@ -29,7 +29,7 @@ class OnboardingViewController: UIViewController {
     //MARK: - viewDidLoad
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+   
         slides = [
             OnboardingSlide(
                 title: "Delicious Dishes",
