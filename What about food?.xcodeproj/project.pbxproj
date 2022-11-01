@@ -13,6 +13,12 @@
 		CC241D982902EE6E00DA9DE3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC241D972902EE6E00DA9DE3 /* Assets.xcassets */; };
 		CC241D9B2902EE6E00DA9DE3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC241D992902EE6E00DA9DE3 /* LaunchScreen.storyboard */; };
 		CC486845290D1B2F0090A1F3 /* DishDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC486844290D1B2F0090A1F3 /* DishDetailsViewController.swift */; };
+		CC5346832911710700FF8734 /* UIViewContoller+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC5346822911710700FF8734 /* UIViewContoller+Extension.swift */; };
+		CC534688291176C000FF8734 /* DIshListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC534686291176C000FF8734 /* DIshListTableViewCell.swift */; };
+		CC534689291176C000FF8734 /* DIshListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CC534687291176C000FF8734 /* DIshListTableViewCell.xib */; };
+		CC53468C29117AFD00FF8734 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC53468B29117AFD00FF8734 /* ListViewController.swift */; };
+		CC53468F2911817F00FF8734 /* ListOrdersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC53468E2911817F00FF8734 /* ListOrdersViewController.swift */; };
+		CC5346912911832100FF8734 /* Orders.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC5346902911832100FF8734 /* Orders.swift */; };
 		CC6DC24C29098AFB00122505 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC6DC24B29098AFB00122505 /* HomeViewController.swift */; };
 		CC7EE8772906F5C900FB0ADE /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC7EE8762906F5C900FB0ADE /* OnboardingViewController.swift */; };
 		CC7EE87A2906F9C600FB0ADE /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC7EE8792906F9C600FB0ADE /* UIView+Extensions.swift */; };
@@ -40,6 +46,12 @@
 		CC241D9A2902EE6E00DA9DE3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CC241D9C2902EE6E00DA9DE3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CC486844290D1B2F0090A1F3 /* DishDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DishDetailsViewController.swift; sourceTree = "<group>"; };
+		CC5346822911710700FF8734 /* UIViewContoller+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewContoller+Extension.swift"; sourceTree = "<group>"; };
+		CC534686291176C000FF8734 /* DIshListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DIshListTableViewCell.swift; sourceTree = "<group>"; };
+		CC534687291176C000FF8734 /* DIshListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DIshListTableViewCell.xib; sourceTree = "<group>"; };
+		CC53468B29117AFD00FF8734 /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
+		CC53468E2911817F00FF8734 /* ListOrdersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListOrdersViewController.swift; sourceTree = "<group>"; };
+		CC5346902911832100FF8734 /* Orders.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Orders.swift; sourceTree = "<group>"; };
 		CC6DC24B29098AFB00122505 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		CC7EE8762906F5C900FB0ADE /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
 		CC7EE8792906F9C600FB0ADE /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
@@ -107,6 +119,39 @@
 			path = DishDetails;
 			sourceTree = "<group>";
 		};
+		CC5346842911766600FF8734 /* TableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				CC5346852911767E00FF8734 /* DIshListTableViewCell */,
+			);
+			path = TableViewCell;
+			sourceTree = "<group>";
+		};
+		CC5346852911767E00FF8734 /* DIshListTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				CC534686291176C000FF8734 /* DIshListTableViewCell.swift */,
+				CC534687291176C000FF8734 /* DIshListTableViewCell.xib */,
+			);
+			path = DIshListTableViewCell;
+			sourceTree = "<group>";
+		};
+		CC53468A29117AD900FF8734 /* ListDishes */ = {
+			isa = PBXGroup;
+			children = (
+				CC53468B29117AFD00FF8734 /* ListViewController.swift */,
+			);
+			path = ListDishes;
+			sourceTree = "<group>";
+		};
+		CC53468D2911816500FF8734 /* ListOrders */ = {
+			isa = PBXGroup;
+			children = (
+				CC53468E2911817F00FF8734 /* ListOrdersViewController.swift */,
+			);
+			path = ListOrders;
+			sourceTree = "<group>";
+		};
 		CC6DC24A29098ACA00122505 /* HomeVIew */ = {
 			isa = PBXGroup;
 			children = (
@@ -121,6 +166,7 @@
 				CCDE38902906FF4E003384D0 /* OnboardingSlide.swift */,
 				CC99A7AC29099CE600706830 /* DishCategory.swift */,
 				CC85EC3D290C35D400D16704 /* Dish.swift */,
+				CC5346902911832100FF8734 /* Orders.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -128,6 +174,8 @@
 		CC7EE8732906F57700FB0ADE /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				CC53468D2911816500FF8734 /* ListOrders */,
+				CC53468A29117AD900FF8734 /* ListDishes */,
 				CC486843290D1B0E0090A1F3 /* DishDetails */,
 				CC6DC24A29098ACA00122505 /* HomeVIew */,
 				CC7EE8752906F59600FB0ADE /* OnboardingView */,
@@ -138,6 +186,7 @@
 		CC7EE8742906F58900FB0ADE /* CustomViews */ = {
 			isa = PBXGroup;
 			children = (
+				CC5346842911766600FF8734 /* TableViewCell */,
 				CC99A7B32909A5F100706830 /* CardView */,
 				CC99A7A6290999EE00706830 /* CollectionViewCells */,
 			);
@@ -158,6 +207,7 @@
 			children = (
 				CC7EE8792906F9C600FB0ADE /* UIView+Extensions.swift */,
 				CC99A7B129099FBA00706830 /* String+Extensions.swift */,
+				CC5346822911710700FF8734 /* UIViewContoller+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -300,6 +350,7 @@
 			files = (
 				CC99A7AB29099A5800706830 /* CategoryCollectionViewCell.xib in Resources */,
 				CC241D9B2902EE6E00DA9DE3 /* LaunchScreen.storyboard in Resources */,
+				CC534689291176C000FF8734 /* DIshListTableViewCell.xib in Resources */,
 				CC85EC3C290C333600D16704 /* DishPortraitCollectionViewCell.xib in Resources */,
 				CC241D982902EE6E00DA9DE3 /* Assets.xcassets in Resources */,
 				CCE6DE83290CFF7900B85BC1 /* DishLandscapeCollectionViewCell.xib in Resources */,
@@ -315,6 +366,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CC99A7B229099FBA00706830 /* String+Extensions.swift in Sources */,
+				CC53468F2911817F00FF8734 /* ListOrdersViewController.swift in Sources */,
 				CC99A7AA29099A5800706830 /* CategoryCollectionViewCell.swift in Sources */,
 				CC486845290D1B2F0090A1F3 /* DishDetailsViewController.swift in Sources */,
 				CCDE38912906FF4E003384D0 /* OnboardingSlide.swift in Sources */,
@@ -327,8 +379,12 @@
 				CC99A7AD29099CE600706830 /* DishCategory.swift in Sources */,
 				CC99A7B52909A60B00706830 /* CardView.swift in Sources */,
 				CCDE389729070490003384D0 /* OnboardingCollectionViewCell.swift in Sources */,
+				CC5346912911832100FF8734 /* Orders.swift in Sources */,
+				CC5346832911710700FF8734 /* UIViewContoller+Extension.swift in Sources */,
+				CC53468C29117AFD00FF8734 /* ListViewController.swift in Sources */,
 				CC85EC3E290C35D400D16704 /* Dish.swift in Sources */,
 				CC85EC3B290C333600D16704 /* DishPortraitCollectionViewCell.swift in Sources */,
+				CC534688291176C000FF8734 /* DIshListTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

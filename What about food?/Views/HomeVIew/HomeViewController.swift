@@ -18,7 +18,7 @@ class HomeViewController: UIViewController {
         .init(id: "id1", name: "Russian Dish3", image: "https://picsum.photos/100/200"),
         .init(id: "id1", name: "Russian Dish4", image: "https://picsum.photos/100/200"),
         .init(id: "id1", name: "Russian Dish5", image: "https://picsum.photos/100/200")
-    
+        
     ]
     
     var popularDisher: [Dish] = [
@@ -83,7 +83,7 @@ class HomeViewController: UIViewController {
         
         chefSpecialsCollectionView.delegate = self
         chefSpecialsCollectionView.dataSource = self
-
+        
     }
     private func registerXIB() {
         categoryCollectionView.register(UINib(nibName: CategoryCollectionViewCell.identifier, bundle: nil), forCellWithReuseIdentifier: CategoryCollectionViewCell.identifier)
@@ -122,9 +122,20 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSour
         case chefSpecialsCollectionView:
             guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: DishLandscapeCollectionViewCell.identifier, for: indexPath) as? DishLandscapeCollectionViewCell else { return DishLandscapeCollectionViewCell()}
             cell.setup(dish: specials[indexPath.row])
-            return cell 
+            return cell
         default:
             return UICollectionViewCell()
+        }
+    }
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        if collectionView == categoryCollectionView {
+            let controller = ListViewController.instantiate()
+            controller.category = categories[indexPath.row]
+            navigationController?.pushViewController(controller, animated: true)
+        } else {
+            let controller = DishDetailsViewController.instantiate()
+            controller.dish = collectionView == popularCollectionView ? popularDisher[indexPath.row] : specials[indexPath.row]
+            navigationController?.pushViewController(controller, animated: true)
         }
     }
 }
