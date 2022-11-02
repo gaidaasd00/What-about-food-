@@ -6,76 +6,19 @@
 //
 
 import UIKit
+import ProgressHUD
 
 class HomeViewController: UIViewController {
     @IBOutlet weak var categoryCollectionView: UICollectionView!
     @IBOutlet weak var popularCollectionView: UICollectionView!
     @IBOutlet weak var chefSpecialsCollectionView: UICollectionView!
     
-    var categories: [DishCategory] = [
-        .init(id: "id1", name: "Russian Dish1", image: "https://picsum.photos/100/200"),
-        .init(id: "id1", name: "Russian Dish2", image: "https://picsum.photos/100/200"),
-        .init(id: "id1", name: "Russian Dish3", image: "https://picsum.photos/100/200"),
-        .init(id: "id1", name: "Russian Dish4", image: "https://picsum.photos/100/200"),
-        .init(id: "id1", name: "Russian Dish5", image: "https://picsum.photos/100/200")
-        
-    ]
-    
-    var popularDisher: [Dish] = [
-        .init(
-            id: "id1",
-            name: "Gleb",
-            description: "This cool and tasty",
-            image: "https://picsum.photos/100/200",
-            calories: 34
-        ),
-        .init(
-            id: "id1",
-            name: "Alex",
-            description: "This cool and tasty2",
-            image: "https://picsum.photos/100/200",
-            calories: 100
-        ),
-        .init(
-            id: "id1",
-            name: "Svyat",
-            description: "This cool and tasty3",
-            image: "https://picsum.photos/100/200",
-            calories: 323
-        ),
-        .init(
-            id: "id1",
-            name: "Alexander",
-            description: "This cool and tasty4",
-            image: "https://picsum.photos/100/200",
-            calories: 312
-        )
-    ]
-    
-    var  specials: [Dish] = [
-        .init(
-            id: "id1",
-            name: "Svyat",
-            description: "This cool and tasty3",
-            image: "https://picsum.photos/100/200",
-            calories: 323
-        ),
-        .init(
-            id: "id1",
-            name: "Alexander",
-            description: "This cool and tasty4",
-            image: "https://picsum.photos/100/200",
-            calories: 312
-        )
-    ]
+    var categories: [DishCategory] = []
+    var popularDisher: [Dish] = []
+    var  specials: [Dish] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
-    
-        title = "What about food?"
-        
-        registerXIB()
-        
         categoryCollectionView.delegate = self
         categoryCollectionView.dataSource = self
         
@@ -85,6 +28,25 @@ class HomeViewController: UIViewController {
         chefSpecialsCollectionView.delegate = self
         chefSpecialsCollectionView.dataSource = self
         
+        registerXIB()
+            
+        ProgressHUD.show()
+        NetworkService.shared.fetchAllCategories { [weak self] result in
+            switch result {
+            case .success(let allDishes):
+                ProgressHUD.dismiss()
+                self?.categories = allDishes.categories ?? []
+                self?.popularDisher = allDishes.populars ?? []
+                self?.specials = allDishes.specials ?? []
+                
+                self?.categoryCollectionView.reloadData()
+                self?.popularCollectionView.reloadData()
+                self?.chefSpecialsCollectionView.reloadData()
+                
+            case .failure(let error):
+                ProgressHUD.showError(error.localizedDescription)
+            }
+        }
     }
     private func registerXIB() {
         categoryCollectionView.register(UINib(nibName: CategoryCollectionViewCell.identifier, bundle: nil), forCellWithReuseIdentifier: CategoryCollectionViewCell.identifier)
