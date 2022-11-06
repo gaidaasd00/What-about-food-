@@ -13,7 +13,7 @@
         <!--Onboarding View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="OnboardingViewController" customModule="What_about_food_" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="OnboardingViewController" id="BYZ-38-t0r" customClass="OnboardingViewController" customModule="What_about_food_" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -264,7 +264,7 @@
                                     </stackView>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstItem="e4O-Oe-giL" firstAttribute="width" secondItem="fR8-c7-Lrc" secondAttribute="width" id="Ewh-Ig-OYa"/>
+                                    <constraint firstItem="e4O-Oe-giL" firstAttribute="width" relation="greaterThanOrEqual" secondItem="fR8-c7-Lrc" secondAttribute="width" id="Ewh-Ig-OYa"/>
                                     <constraint firstItem="e4O-Oe-giL" firstAttribute="leading" secondItem="fR8-c7-Lrc" secondAttribute="leading" id="HpW-qN-I1J"/>
                                     <constraint firstItem="e4O-Oe-giL" firstAttribute="top" secondItem="fR8-c7-Lrc" secondAttribute="top" id="RBt-2d-fO6"/>
                                     <constraint firstAttribute="trailing" secondItem="e4O-Oe-giL" secondAttribute="trailing" id="bbW-LG-MM9"/>
@@ -474,7 +474,7 @@
         <!--Navigation Controller-->
         <scene sceneID="KKW-5p-nA6">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Mry-jn-L7n" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="HomeNC" automaticallyAdjustsScrollViewInsets="NO" id="Mry-jn-L7n" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="lWD-fU-z43">
                         <rect key="frame" x="0.0" y="47" width="390" height="44"/>
